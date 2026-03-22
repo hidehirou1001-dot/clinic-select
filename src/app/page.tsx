@@ -1,4 +1,4 @@
-import { clinicsData } from "@/data/clinics";
+import ClinicSearch from "@/components/ClinicSearch";
 
 export default function Home() {
   return (

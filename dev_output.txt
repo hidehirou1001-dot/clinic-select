@@ -135,3 +135,5 @@ Import trace:
   17 |     </div>
   18 |   );
   19 | }
+ GET / 200 in 214ms (next.js: 129ms, application-code: 85ms)
+✓ Compiled in 17ms

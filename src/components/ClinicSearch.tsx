@@ -7,11 +7,9 @@ import SearchForm from "@/components/SearchForm";
 import { Department, FeatureKeyword } from "@/types/clinic";
 
 export default function ClinicSearch() {
-    // ユーザーがチェックを入れている最中の状態
     const [draftDepartments, setDraftDepartments] = useState<Department[]>([]);
     const [draftFeatures, setDraftFeatures] = useState<FeatureKeyword[]>([]);
 
-    // 実際に検索ボタンが押された後の状態
     const [activeDepartments, setActiveDepartments] = useState<Department[]>([]);
     const [activeFeatures, setActiveFeatures] = useState<FeatureKeyword[]>([]);
 
@@ -32,13 +30,10 @@ export default function ClinicSearch() {
         );
     };
 
-    // フィルタリングロジック
     const filteredClinics = clinicsData.filter(clinic => {
-        // 診療科の絞り込み（選択されている場合、いずれかが含まれていればOKとするOR検索）
         const matchDep = activeDepartments.length === 0 ||
             activeDepartments.some(dep => clinic.departments.includes(dep));
 
-        // 特徴の絞り込み（選択されている場合、すべて満たす必要があるAND検索）
         const matchFeat = activeFeatures.length === 0 ||
             activeFeatures.every(feat => clinic.features.includes(feat));
 
