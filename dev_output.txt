@@ -1,0 +1,137 @@
+▲ Next.js 16.2.1 (Turbopack)
+- Local:         http://localhost:3000
+- Network:       http://192.168.10.112:3000
+✓ Ready in 377ms
+
+ GET / 200 in 1637ms (next.js: 1511ms, application-code: 127ms)
+✓ Compiled in 160ms
+[browser] ./src/components/ClinicSearch.tsx:4:1
+Export dummyClinics doesn't exist in target module
+  2 | ...
+  3 | ... { useState } from "react";
+> 4 | ... { dummyClinics } from "@/data/clin...
+    |    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  5 | ... ClinicCard from "@/components/Clin...
+  6 | ... SearchForm from "@/components/Sear...
+  7 | ... { Department, FeatureKeyword } fro...
+
+The export dummyClinics was not found in module [project]/src/data/clinics.ts [app-client] (ecmascript).
+Did you mean to import clinicsData?
+All exports of the module are statically known (It doesn't have dynamic exports). So it's known statically that the requested export doesn't exist.
+
+Import trace:
+  Server Component:
+    ./src/components/ClinicSearch.tsx
+    ./src/app/page.tsx 
+[browser] ./src/components/ClinicSearch.tsx:4:1
+Export dummyClinics doesn't exist in target module
+  2 | ...
+  3 | ... { useState } from "react";
+> 4 | ... { dummyClinics } from "@/data/clin...
+    |    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  5 | ... ClinicCard from "@/components/Clin...
+  6 | ... SearchForm from "@/components/Sear...
+  7 | ... { Department, FeatureKeyword } fro...
+
+The export dummyClinics was not found in module [project]/src/data/clinics.ts [app-ssr] (ecmascript).
+Did you mean to import clinicsData?
+All exports of the module are statically known (It doesn't have dynamic exports). So it's known statically that the requested export doesn't exist.
+
+Import trace:
+  Server Component:
+    ./src/components/ClinicSearch.tsx
+    ./src/app/page.tsx 
+[browser] ./src/components/ClinicSearch.tsx:4:1
+Export dummyClinics doesn't exist in target module
+  2 | ...
+  3 | ... { useState } from "react";
+> 4 | ... { dummyClinics } from "@/data/clin...
+    |    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  5 | ... ClinicCard from "@/components/Clin...
+  6 | ... SearchForm from "@/components/Sear...
+  7 | ... { Department, FeatureKeyword } fro...
+
+The export dummyClinics was not found in module [project]/src/data/clinics.ts [app-client] (ecmascript).
+Did you mean to import clinicsData?
+All exports of the module are statically known (It doesn't have dynamic exports). So it's known statically that the requested export doesn't exist.
+
+Import trace:
+  Server Component:
+    ./src/components/ClinicSearch.tsx
+    ./src/app/page.tsx 
+[browser] ./src/components/ClinicSearch.tsx:4:1
+Export dummyClinics doesn't exist in target module
+  2 | ...
+  3 | ... { useState } from "react";
+> 4 | ... { dummyClinics } from "@/data/clin...
+    |    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  5 | ... ClinicCard from "@/components/Clin...
+  6 | ... SearchForm from "@/components/Sear...
+  7 | ... { Department, FeatureKeyword } fro...
+
+The export dummyClinics was not found in module [project]/src/data/clinics.ts [app-ssr] (ecmascript).
+Did you mean to import clinicsData?
+All exports of the module are statically known (It doesn't have dynamic exports). So it's known statically that the requested export doesn't exist.
+
+Import trace:
+  Server Component:
+    ./src/components/ClinicSearch.tsx
+    ./src/app/page.tsx 
+✓ Compiled in 71ms
+⨯ ReferenceError: ClinicSearch is not defined
+    at Home (src/app/page.tsx:16:8)
+  14 |       </section>
+  15 |
+> 16 |       <ClinicSearch />
+     |        ^
+  17 |     </div>
+  18 |   );
+  19 | } {
+  digest: '864254198'
+}
+⨯ ReferenceError: ClinicSearch is not defined
+    at Home (src/app/page.tsx:16:8)
+  14 |       </section>
+  15 |
+> 16 |       <ClinicSearch />
+     |        ^
+  17 |     </div>
+  18 |   );
+  19 | } {
+  digest: '864254198'
+}
+⨯ ReferenceError: ClinicSearch is not defined
+    at Home (src/app/page.tsx:16:8)
+  14 |       </section>
+  15 |
+> 16 |       <ClinicSearch />
+     |        ^
+  17 |     </div>
+  18 |   );
+  19 | } {
+  digest: '864254198'
+}
+ GET / 200 in 251ms (next.js: 137ms, application-code: 115ms)
+⨯ ReferenceError: ClinicSearch is not defined
+    at Home (src/app/page.tsx:16:8)
+  14 |       </section>
+  15 |
+> 16 |       <ClinicSearch />
+     |        ^
+  17 |     </div>
+  18 |   );
+  19 | } {
+  digest: '864254198'
+}
+ GET / 200 in 122ms (next.js: 57ms, application-code: 65ms)
+ GET / 200 in 51ms (next.js: 1621µs, application-code: 49ms)
+ GET / 500 in 128ms (next.js: 1567µs, application-code: 127ms)
+[browser] Uncaught ReferenceError: ClinicSearch is not defined
+    at Home (src/app/page.tsx:16:8)
+  14 |       </section>
+  15 |
+> 16 |       <ClinicSearch />
+     |        ^
+  17 |     </div>
+  18 |   );
+  19 | }

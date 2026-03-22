@@ -1,7 +1,7 @@
 "use client";
 
 import { useState } from "react";
-import { dummyClinics } from "@/data/clinics";
+import { clinicsData } from "@/data/clinics";
 import ClinicCard from "@/components/ClinicCard";
 import SearchForm from "@/components/SearchForm";
 import { Department, FeatureKeyword } from "@/types/clinic";
@@ -33,7 +33,7 @@ export default function ClinicSearch() {
     };
 
     // フィルタリングロジック
-    const filteredClinics = dummyClinics.filter(clinic => {
+    const filteredClinics = clinicsData.filter(clinic => {
         // 診療科の絞り込み（選択されている場合、いずれかが含まれていればOKとするOR検索）
         const matchDep = activeDepartments.length === 0 ||
             activeDepartments.some(dep => clinic.departments.includes(dep));
